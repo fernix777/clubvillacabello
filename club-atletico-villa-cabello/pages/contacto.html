@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Club Atlético Villa Cabello</title>
+    <link rel="stylesheet" href="../assets/css/normalize.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <div class="logo-container">
+                <div class="logo-wrapper">
+                    <img src="../assets/images/escudo.jpeg" alt="Logo Club Atlético Villa Cabello" class="logo-img">
+                </div>
+                <div class="club-info">
+                    <h1>Club Atlético Villa Cabello</h1>
+                    <span class="slogan">Pasión y Gloria desde 2013</span>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/clubSocialyDeportivoVillaCabello" class="social-icon"><i class="fab fa-facebook" target="_blank"></i></a>
+                        <a href="https://www.instagram.com/club_villacabellooficial/" class="social-icon"><i class="fab fa-instagram" target="_blank"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="calendario.html">Calendario</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Información de Contacto</h2>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Av. Ejemplo 123, Villa Cabello, Misiones</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+54 376 XXXXXXX</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@clubvillacabello.com</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h2>Envíanos un mensaje</h2>
+                    <form id="contactForm" onsubmit="return validateForm(event)">
+                        <div class="form-group">
+                            <input type="text" id="nombre" name="nombre" required>
+                            <label for="nombre">Nombre Completo</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Correo Electrónico</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="asunto" name="asunto" required>
+                                <option value="">Seleccione un asunto</option>
+                                <option value="informacion">Información General</option>
+                                <option value="inscripcion">Inscripción Deportiva</option>
+                                <option value="socios">Membresía de Socios</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensaje" name="mensaje" required></textarea>
+                            <label for="mensaje">Tu Mensaje</label>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span>Enviar Mensaje</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Club Atlético Villa Cabello. Todos los derechos reservados.</p>
+    </footer>
+    <script src="../assets/js/contact.js"></script>
+</body>
+</html>
